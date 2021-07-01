@@ -6,7 +6,7 @@
 body{
     /* height:100%; */
     width: 100%;
-    background-color:white;
+    background-color:hsl(230, 17%, 14%);
     color: white;
 }
 .container{
@@ -81,31 +81,69 @@ body{
     transform:translateY(-50%);
     color:white;
 }
-.grid-container{
-    display:grid;
-    grid-template-areas:'box1 box2'
-                        'box3 box4 '
-                        'box5 box6 '
-                        'box7 box8 '
-                        'box9 box10';
-    grid-template-rows: 250px 250px 250px 250px 250px;
-    grid-template-columns: auto auto;
-    gap:20px;
-}
+
 .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
 background-color: hsl(228, 28%, 20%);
 }
-.user{
-  width: 100vw;
-  height: 20rem;
-}
-img{
-  width: 40px;
-  height: 40px;
-  }
-  .user{
 
-    background-color: rgb(124, 119, 119);
-    padding: 1rem;
-    margin: 1rem;
+.avatar img{
+  float:left;
+  width:70%;
+  height:15rem;
+  padding-left: 40px;
+}
+.description p{
+  float: right;
+  font-size:1.8rem;
+  padding-right: 40px;
+}
+.description a{
+  color:white;
+}
+.description a:hover{
+  color:hsl(228, 34%, 66%);
+}
+  .user{
+    display:grid;
+    grid-template-columns: auto auto;
+    background-color: hsl(228, 28%, 20%);
+    padding: 2rem;
+    margin: 3rem;
+    }
+    @media screen and (max-width: 773px) {
+      .user{
+        display:grid;
+        grid-template-rows: 'auto' 
+                            'auto';
+        background-color: hsl(228, 28%, 20%);
+        padding: 1rem;
+        justify-content: center;
+        margin: 2rem;
+        }
+        .avatar img{
+          width:80%;
+          height:8rem;
+          padding-left: 5px;
+        }
+        .description p{
+          font-size:0.8rem;
+          padding-right: 10px;
+        }
+    }
+    @media screen and (max-width: 383px){
+      .user{
+        display:grid;
+        grid-template-rows: 'auto' 
+                            'auto';
+        background-color: hsl(228, 28%, 20%);
+        justify-content: center;
+        margin: 2rem;
+        }
+      .avatar img{
+        width:80%;
+        height:8rem;
+      }
+      .description p{
+        font-size:0.8rem;
+      }
     }
