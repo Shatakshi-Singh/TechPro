@@ -6,7 +6,7 @@
 body{
     /* height:100%; */
     width: 100%;
-    background-color:white;
+    background-color:hsl(230, 17%, 14%);
     color: white;
 }
 .container{
