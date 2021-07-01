@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    /* height:100%; */
+    width: 100%;
+    background-color:white;
+    color: white;
+}
+.container{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    background-color:hsl(233, 31%, 11%);
+    overflow:hidden;
+  }
+  .container:before{
+      content:'';
+      position: absolute;
+      width:2000px;
+      height: 2000px;
+      border-radius: 50px;
+      top:-10%;
+      right:48%;
+      transform:translateY(-50%);
+      color:white;
+  }
+  .navbar{
+      color: white;
+  }
+  .nav-item{
+      color: white;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      color: white;
+    }
+    
+    li {
+      float: left;
+      display:flex;
+    }
+    .navbar-brand{ 
+      color: white;
+      text-align: center;
+      padding: 24px 40px;
+      font-size:1.7rem;
+  }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 24px 46px;
+      margin:0px 10px;
+      font-size:1.6rem;
+      text-decoration: none;
+    }
+    li a:hover{
+      color:lightblue;
+    }
+.container{
+  position:relative;
+  width:100%;
+  min-height:250vh;
+  background-color:hsl(233, 31%, 11%);
+  overflow:hidden;
+}
+.container:before{
+    content:'';
+    position: absolute;
+    width:2000px;
+    height: 2000px;
+    border-radius: 50px;
+    top:-10%;
+    right:48%;
+    transform:translateY(-50%);
+    color:white;
+}
+.grid-container{
+    display:grid;
+    grid-template-areas:'box1 box2'
+                        'box3 box4 '
+                        'box5 box6 '
+                        'box7 box8 '
+                        'box9 box10';
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-template-columns: auto auto;
+    gap:20px;
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
+background-color: hsl(228, 28%, 20%);
+}
+.user{
+  width: 100vw;
+  height: 20rem;
+}
+img{
+  width: 40px;
+  height: 40px;
+  }
+  .user{
+
+    background-color: rgb(124, 119, 119);
+    padding: 1rem;
+    margin: 1rem;
+    }
