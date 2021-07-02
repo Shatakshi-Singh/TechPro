@@ -74,8 +74,12 @@ ul {
 .left-panel{
   padding-top:70px;
 }
+.left-panel h1{
+  letter-spacing:2.5px;
+}
 .left-panel p{
   font-size:1.6rem;
+  font-style: italic;
 }
 .right-panel{
   float:right;
