@@ -63,15 +63,32 @@ ul {
   li a:hover{
     color:lightblue;
   }
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
 .panel{
     padding:20px;
     font-size:2rem;
 }
 .left-panel{
-  padding-top:40px;
-
+  padding-top:70px;
+}
+.left-panel p{
+  font-size:1.6rem;
 }
 .right-panel{
   float:right;
   color: white;
 }
+@media screen and (max-width: 773px){
+  .grid-container{
+    display:grid;
+    grid-template-rows: auto
+                        auto;
+  }
+  .right-panel{
+    color: white;
+  }
+}
+
