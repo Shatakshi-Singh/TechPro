@@ -19,6 +19,7 @@ function fetchData(){
                  <div class="avatar"><p><img class="xyz" src="${user.owner.avatar_url}"></img></p></div>
                 <div class="description"><p><a href="${user.html_url}">Repository Link </a><br><br>
                 Name: ${user.name}<br><br>
+                Description: ${user.description}<br><br>
                 Fork Count: ${user.forks_count}</p></div>
                 
                 </div>

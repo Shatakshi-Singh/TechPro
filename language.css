@@ -99,9 +99,11 @@ background-color: hsl(228, 28%, 20%);
 }
 .description a{
   color:white;
+  text-decoration: none;
 }
 .description a:hover{
   color:hsl(228, 34%, 66%);
+  
 }
   .user{
     display:grid;
