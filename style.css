@@ -9,6 +9,9 @@ body{
     background-color:hsl(230, 17%, 14%);
     color: white;
 }
+b{
+  font-size: 2rem;
+}
 .container{
   position:relative;
   width:100%;
@@ -84,6 +87,14 @@ ul {
 .right-panel{
   float:right;
   color: white;
+}
+
+h3{
+
+  color: aliceblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  
 }
 @media screen and (max-width: 773px){
   .grid-container{
